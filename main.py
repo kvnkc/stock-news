@@ -5,7 +5,7 @@ COMPANY_NAME = "Tesla Inc"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-news_api = '9271981438a44098b6dc0b5842d80876'
+news_api = 'NEWS_API'
 
 news_parameters = {
     'q': COMPANY_NAME,
@@ -17,7 +17,7 @@ news_parameters = {
 stock_parameters = {
     'function': 'TIME_SERIES_DAILY',
     'symbol': STOCK_NAME,
-    'apikey': 'VIZRCW2WW0UB437T'
+    'apikey': 'STOCK_API'
 }
 
 news_response = requests.get(url=NEWS_ENDPOINT, params=news_parameters)
